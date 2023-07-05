@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.footer-content{
+    padding: 10px;
+    display: flex;
+}
+
+.footer-column-left {
+    width: calc(100% / 3);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-column-center{
+    width: calc(100% / 3 * 2);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-column-right {
+    width: calc(100% / 3);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-column-left h5{
+    color: white;
+}
+
+.footer-column-left span{
+    color: gray;
+}
+
+.footer-column-left .icon i{
+    color: gray;
+    margin-right: 10px;
+}
+
+.now-playing {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.now-playing img {
+    width: 100%;
+}
+
+.album-details span{
+    font-size: 15px;
+}
+
+.footer-column-left .icon{
+    margin-left: 30px;
+}
+
+
+.center-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 180px;
+}
+
+.fa-circle-play {
+    margin: 0 8px;
+}
+
+.center-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.center-top i {
+    cursor: pointer;
+    color: white;
+}
+
+.play-bar, .white-bar {
+    cursor: pointer;
+    line-height: 1rem;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.footer-column-center .play-bar {
+    margin: 0 25px;
+    width: 65%;
+    background-color: grey;
+}
+
+.footer-column-center .white-bar {
+    width: 25%;
+    background-color: white;
+}
+
+.settings {
+    width: 170px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings i {
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+
+.footer-column-right .play-bar {
+    width: 65%;
+    background-color: grey;
+}
+
+.footer-column-right .white-bar {
+    width: 25%;
+    background-color: white;
+}
