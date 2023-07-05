@@ -69,7 +69,7 @@ footer{
 
 .footer-column-left .icon i{
     color: gray;
-    margin-right: 10px;
+    margin-right: 10px;;
 }
 
 .now-playing {
@@ -158,11 +158,18 @@ footer{
 
 
 /* RESPONSIVE */
-/* Footer tablet */
+
+/* FOOTER */
+
+/* MEDIUM */
 @media screen and (max-width:992px) {
 
     .footer-column-left .album{
         font-size: .85rem;
+    }
+    
+    .footer-column-left .album-details{
+        white-space: nowrap;
     }
 
     .footer-column-left span{
@@ -171,20 +178,23 @@ footer{
 
     .footer-column-left .icon{
         font-size: .7rem;
-    }
-
-    .footer-column-center .play-bar {
-        margin: 0 25px;
-        width: 50%;
-        background-color: grey;
-    }
-    
-    .footer-column-center .white-bar {
-        width: 15%;
-        background-color: white;
+        white-space: nowrap;
     }
 
     .footer-column-right .settings i{
         font-size: .7rem;
     }
 }
+
+/* SMALL */
+@media screen and (max-width:768px) {
+   
+    .footer-column-left .icon {
+        margin-left: 20px;
+        white-space: normal;
+    }
+}
+
+
+
+
