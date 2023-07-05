@@ -53,8 +53,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 20px 0;
-
+    margin: 15px 0;
 }
 
 .middle-nav h5 {
@@ -102,12 +101,12 @@ img{
 }
 
 .download *{
-    font-size: 1rem;
+    font-size: .85rem;
     margin-bottom: 15px;
 }
 
 .user *{
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-top: 15px;
 }
 
@@ -125,13 +124,25 @@ img{
 }
 
 header {
-    height: 100px;
+    height: 70px;
     width: 100%;
+    background-color: #080B12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: .8;
   }
 
-
-
-
+  header a{
+    font-size: .75rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 2rem;
+  }
 
 /* FOOTER */
 
