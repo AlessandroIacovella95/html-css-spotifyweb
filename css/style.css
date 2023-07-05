@@ -43,7 +43,6 @@ footer{
     height: 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     align-items: center;
 }
@@ -64,6 +63,10 @@ footer{
     color: gray;
 }
 
+.footer-column-left .icon{
+   margin-left: 30px;
+}
+
 .footer-column-left .icon i{
     color: gray;
     margin-right: 10px;
@@ -81,11 +84,6 @@ footer{
 .album-details span{
     font-size: 15px;
 }
-
-.footer-column-left .icon{
-    margin-left: 30px;
-}
-
 
 .center-top{
     display: flex;
@@ -156,4 +154,37 @@ footer{
 .footer-column-right .white-bar {
     width: 25%;
     background-color: white;
+}
+
+
+/* RESPONSIVE */
+/* Footer tablet */
+@media screen and (max-width:992px) {
+
+    .footer-column-left .album{
+        font-size: .85rem;
+    }
+
+    .footer-column-left span{
+        font-size: .85rem;
+    }
+
+    .footer-column-left .icon{
+        font-size: .7rem;
+    }
+
+    .footer-column-center .play-bar {
+        margin: 0 25px;
+        width: 50%;
+        background-color: grey;
+    }
+    
+    .footer-column-center .white-bar {
+        width: 15%;
+        background-color: white;
+    }
+
+    .footer-column-right .settings i{
+        font-size: .7rem;
+    }
 }
