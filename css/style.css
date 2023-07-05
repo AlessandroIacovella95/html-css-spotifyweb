@@ -116,15 +116,30 @@ img{
     color: white;
 }
 
-/* #main-content */
+/* MAIN CONTENT */
 #main-content{
-    display: flex;
     height: calc(100vh - 100px);
     width: calc(100% - 200px);
     background-color: #141922;
     overflow-y: auto;
 }
 
+.main-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top:20px;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.main-list a{
+    font-weight: 800;
+    text-decoration: none;
+    color: lightgray
+}
+
+/* HEADER */
 header {
     height: 70px;
     width: 100%;
