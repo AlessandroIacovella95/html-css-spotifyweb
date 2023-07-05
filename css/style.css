@@ -188,13 +188,29 @@ footer{
 
 /* SMALL */
 @media screen and (max-width:768px) {
-   
     .footer-column-left .icon {
         margin-left: 20px;
         white-space: normal;
     }
 }
 
+/* X-SMALL */
+
+@media screen and (max-width:576px){
+    .footer-column-center .play-bar{
+        margin: 0 10px;
+    }
+
+    .footer-column-left .album-details{
+        white-space: normal;
+    }
+
+    .footer-column-left .album-details span{
+        font-size: .7rem;
+    }
+}
+
+  
 
 
 
