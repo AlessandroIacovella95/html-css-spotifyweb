@@ -1,3 +1,4 @@
+/* CLASSI DI RESET */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +8,7 @@
 img{
     max-width: 100%;
 }
-
+/* PERSONALIZZAZIONE SCROLLBAR */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -34,10 +35,6 @@ img{
     background-color: #000000;
     width: 300px;
     color: #6b6b6b;
-}
-
-.main-nav:hover .{
-
 }
 
 .main-nav-xs{
@@ -159,10 +156,6 @@ img{
     margin: 15px 0;
 }
 
-.nav-items:hover{
-    color: white;
-}
-
 .bottom-nav {
     flex-grow: 1;
     display: flex;
@@ -189,47 +182,18 @@ img{
     margin-right: 0;
 }
 
-.home span:hover{
-    color:white;
-    cursor: pointer;
-}
-
-.top-nav img:hover{
-    box-shadow:inset 10px 0 0 -8px #9CE62A;
-}
-
-.search span:hover{
-    color:white;
-    cursor: pointer;
-}
-
-.library span:hover{
-    color:white;
-    cursor: pointer;
-}
-
-.playlist:hover{
-    color: white;
-    cursor: pointer;
-}
-
-.playlist i:hover{
-    color: white;
-}
-
-.download > span:hover{
-    color: white;
-    cursor: pointer;
-}
-
 .user span, img{
     cursor: pointer;
 }
 
+.nav-items a{
+    text-decoration:none;
+    color: #878787;
+}
 
-
-
-
+.nav-items a:hover{
+    color: white;
+}
 
 /* MAIN CONTENT */
 #main-content{
@@ -294,14 +258,6 @@ img{
 .prova i{
     font-size: 50px;
     color: white;    
-}
-
-.effect:hover{
-    filter: opacity(.8);
-}
-
-.effect:hover .prova{
-    display: flex;
 }
 
 .album h2{
@@ -375,15 +331,6 @@ header a{
     border-radius: 2rem;
 }
 
-li:hover a{
-    color: white;
-}
-
-.upgrade:hover{
-    transform: scale(1.1);
-    color: white;
-}
-
 /* FOOTER */
 
 footer{
@@ -424,6 +371,7 @@ footer{
 
 .footer-column-left h5{
     color: white;
+    cursor: pointer;
 }
 
 .footer-column-left span{
@@ -504,7 +452,6 @@ footer{
 }
 
 .ball{
-    display: block;
     width: 15px;
     aspect-ratio: 1;
     border-radius: 50px;
@@ -513,6 +460,19 @@ footer{
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%);
+    display: none;
+}
+
+.small-ball{
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .settings {
@@ -537,13 +497,79 @@ footer{
     background-color: white;
 }
 
+/* HOVER */
+.home span:hover{
+    color:white;
+    cursor: pointer;
+}
 
+.top-nav img:hover{
+    box-shadow:inset 10px 0 0 -8px #9CE62A;
+}
 
+.search span:hover{
+    color:white;
+    cursor: pointer;
+}
 
+.library span:hover{
+    color:white;
+    cursor: pointer;
+}
 
+.playlist:hover{
+    color: white;
+    cursor: pointer;
+}
 
+.playlist i:hover{
+    color: white;
+}
 
+.download > span:hover{
+    color: white;
+    cursor: pointer;
+}
 
+.effect:hover{
+    filter: opacity(.8);
+}
+
+.effect:hover .prova{
+    display: flex;
+}
+
+.main-items:hover a{
+    color: white;
+}
+
+.upgrade:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.album-details span:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.white-bar:hover{
+    background-color: #9CE62A;
+}
+
+.white-bar:hover .ball{
+    display: block;
+}
+
+.white-bar:hover .small-ball{
+    display: block;
+}
 
 
 

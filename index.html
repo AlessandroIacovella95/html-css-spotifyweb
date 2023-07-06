@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- META LINK -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK FONTE AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- LINK CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
+    <!-- LINK FAVICON SPOTIFY -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 <body>
+    <!-- INIZIO MAIN -->
     <main id="top-content">
+        <!-- SIDEBAR -->
         <nav class="main-nav">
+            <!-- CONTENITORE NAVBAR -->
             <div class="container-nav">
               <img src="./img/logo.svg" alt="" class="logo"/>
+              <!-- INIZIO TOP-NAV 3 ICON -->
               <div class="top-nav">
+                  <!--ICONA HOME  -->
                   <div class="home">
                       <img src="img/home.svg" alt="">
                       <span>Home</span>
                   </div>
+                  <!-- ICONE RICERCA -->
                   <div class="search">
                        <img src="./img/search.svg" alt="">
                        <span>Cerca</span>
                   </div>
+                  <!-- ICONE LIBRERIA -->
                   <div class="library">
                       <img src="./img/libreria.svg" alt="">
                       <span>La tua Libreria</span>
                   </div>
                </div>
-              
-              <div class="middle-nav">
+               <!-- INIZIO PLAYLIST NAVBAR -->
+               <div class="middle-nav">
+                <!-- TITOLO PLAYLIST -->
                   <h5>PLAYLIST</h5>
                   <div class="playlist">
                       <i class="fa-solid fa-square-plus"></i>
                       <div>Crea Playlist</div>
                   </div>
-              </div>
-              
-              <div class="nav-list">
+               </div>
+                <!-- PLAYLIST -->
+               <div class="nav-list">
                   <ul class="ul-name-playlist">
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
-                       <li class="nav-items">Nome playlist</li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
                   </ul>
               </div>
+              <!-- INIZIO INFO ACCOUNT -->
               <div class="bottom-nav">
+                  <!--ICON INSTALLA APP -->
                   <div class="download">
                       <img src="./img/download.svg" alt="">
                       <span>Installa App</span>
                   </div>
                   <hr>
+                  <!-- UTENTE -->
                   <div class="user">
                        <img src="./img/profile.svg" alt="">
                        <span>John Doe</span>
@@ -67,7 +82,7 @@
               </div>
             </div>
         </nav>
-
+        <!-- NAVBAR RESPONSIVE-XS-576PX -->
         <nav class="main-nav-xs">
             <div class="container-nav">
               <img src="./img/logo-small.svg" alt="" class="logo-small" />
@@ -94,12 +109,14 @@
             </div>
         </nav>
         
-
+         <!-- INIZIO CONTENUTO PRINCIPALE -->
         <section id="main-content">
             <div class="album">
+                <!-- HEADER -->
                 <header>
                     <a class="upgrade" href="#">EFFETTUA L'UPGRADE</a>        
                 </header>
+                <!-- LISTA MAIN CONTENT -->
                 <ul class="main-list">
                     <li class="main-items"><a href="#">IN EVIDENZA</a></li>
                     <li class="main-items"><a href="#">PODCAST</a></li>
@@ -109,8 +126,10 @@
                     <li class="main-items"><a href="#">SCOPRI</a></li>
                 </ul>
                 <div class="container">
+                    <!-- TITOLO MAIN CONTENT -->
                     <h2>Recently played</h2>
                     <div class="row">
+                        <!-- PRIMO ALBUM -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -125,6 +144,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- SECONDO ALBUM -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -139,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- TERZO ALBUM -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -154,7 +174,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- QUARTO ALBUM -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -169,7 +189,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- QUINTO ALBUM -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -184,7 +204,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- SESTO ALBUM -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -200,10 +220,11 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- SECONDA SEZIONE ALBUM -->
                     <h2 id="second-title">Creato per John Doe</h2>
                     <span>Più ascolti, più accurati saranno i suggerimenti.</span>
                     <div class="row">
+                        <!-- PRIMO ALBUM SECONDA SEZIONE -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -217,7 +238,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- SECONDO ALBUM SECONDA SEZIONE-->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -232,10 +253,11 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- TERZA SEZIONE ALBUM -->
                     <h2 id="second-title">Artisti più popolari</h2>
                     <span>Più ascolti, più accurati saranno i suggerimenti.</span>
                     <div class="row">
+                        <!-- PRIMO ALBUM TERZA SEZIONE -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -251,7 +273,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- SECONDO ALBUM TERZA SEZIONE -->
                         <div class="col">
                             <div class="card">
                                 <div class="effect">
@@ -272,54 +294,69 @@
             </div>   
         </section>
     </main>
-
+    <!-- INIZIO FOOTER -->
     <footer>
+        <!-- CONTENITORE FOOTER -->
         <div class="footer-content">
-
+            <!-- SEZIONE FOOTER LEFT -->
             <div class="footer-column-left">
+                <!-- ALBUM IN ASCOLTO -->
                 <div class="now-playing">
                     <img src="img/sinister.jpeg" alt="sinister">
                 </div>
+                <!-- INFO ALBUM IN ASCOLTO -->
                 <div class="album">
                     <h5>Sinister</h5>
                     <div class="album-details">
-                        <span>Brano</span>
-                        <span>Nome</span>
+                        <span>Brano Nome</span>
                     </div>
                 </div>
+                <!-- ICONE SEZIONE FOOTER LEFT -->
                 <div class="icon">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
 
-    
+            <!-- SEZIONE FOOTER CENTER -->
             <div class="footer-column-center">
+                <!-- SEZIONE TOP FOOTER CENTER -->
                 <div class="center-top">
+                    <!-- ICONE SEZIONE TOP -->
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <i class="fa-regular fa-circle-play fa-2x"></i>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
+                <!-- SEZIONE BOTTOM FOOTER CENTER -->
                 <div class="center-down">
                     <span>0:25</span>
+                    <!-- BARRA COMPLETA  -->
                     <div class="play-bar">
+                        <!-- BARRA SCORRIMENTO -->
                         <div class="white-bar">
+                            <!-- BALL PER BARRA SCORRIMENTO -->
                             <div class="ball"></div>
                         </div>
                     </div>
                      <span>4:35</span>
                 </div>
             </div>
-
+             <!-- SEZIONE FOOTER RIGHT -->
             <div class="footer-column-right">
                 <div class="settings">
+                    <!-- ICONE SEZIONE RIGHT -->
                     <i class="fa-solid fa-list-ul"></i>
                     <i class="fa-solid fa-display"></i>
                     <i class="fa-solid fa-volume-high"></i>
+                    <!-- BARRA COMPLETA -->
                     <div class="play-bar">
-                        <div class="white-bar"></div>
+                        <!-- BARRA SCORRIMENTO -->
+                        <div class="white-bar">
+                            <!-- SMALL-BALL BARRA SCORRIMENTO -->
+                            <div class="small-ball"></div>
+                        </div>
                     </div>
                 </div>
             </div>
