@@ -559,15 +559,15 @@ footer{
     color: white;
 }
 
-.white-bar:hover{
+.play-bar:hover .white-bar {
     background-color: #9CE62A;
 }
 
-.white-bar:hover .ball{
+.play-bar:hover .ball{
     display: block;
 }
 
-.white-bar:hover .small-ball{
+.play-bar:hover .small-ball{
     display: block;
 }
 
