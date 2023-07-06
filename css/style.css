@@ -235,6 +235,23 @@ img{
     font-weight: 900;
 }
 
+#second-title{
+    margin-top: 20px;
+}
+
+.img-circle{
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+.img-circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
