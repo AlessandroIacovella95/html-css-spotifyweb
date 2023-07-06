@@ -32,7 +32,7 @@ img{
 /* MAIN-NAV */
 .main-nav {
     background-color: #000000;
-    width: 250px;
+    width: 300px;
     color: #6b6b6b;
 }
 
@@ -179,7 +179,7 @@ img{
 
 /* MAIN CONTENT */
 #main-content{
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
     background-color: #141922;
     overflow: auto;
 }
@@ -497,27 +497,41 @@ footer{
     }
 
     .footer-column-right .settings i{
-        font-size: .7rem;
+        font-size: 1rem;
     }
 }
 
 /* SMALL */
 @media screen and (max-width:768px) {
     /* MAIN-CONTENT */
+
     .main-list li:last-child{
         margin-top: 0;
         display: list-item;
         flex-basis: auto;
     }
-
+    
+    .card .title h4{
+        font-size: 1.4rem;
+    }
+    
+    .card .title span{
+        font-size: 1.2rem;
+    }
+    
     .col{
         width: calc(100% / 2)
+    }
+
+    .album span{
+        font-size: 1.2rem;
     }
 
     /* FOOTER */
     .footer-column-left .icon {
         margin-left: 20px;
         white-space: pre-line;
+        font-size: 1rem;
     }
 }
 
