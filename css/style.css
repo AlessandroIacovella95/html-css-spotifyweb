@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 img{
     max-width: 100%;
 }
@@ -44,18 +48,21 @@ img{
 }
 
 .main-nav-xs .logo-small{
+    padding-top: 2px;
     width: 25px;
 }
 
 .container-nav {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     height: 100%;
+    overflow-y: auto;
 }
 
 .logo {
-    width: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 135px;
 }
 
 .top-nav img{
@@ -64,23 +71,32 @@ img{
 }
 
 .bottom-nav img{
-    width: 25px;
+    width: 20px;
     margin-right: 10px;
 }
 
-.home {
+.top-nav a{
+    font-size: 1rem;
+    color:#878787 ;
+    text-decoration: none;
+}
+
+.home{
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .search {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .library {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .download{
@@ -102,6 +118,7 @@ img{
 .top-nav {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     font-size: 1.2rem;
     gap: 15px;
     margin-top: 25px;
@@ -117,10 +134,11 @@ img{
     flex-direction: column;
     gap: 15px;
     margin: 15px 0;
+    padding-left: 10px;
 }
 
 .middle-nav h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 800;
     color: white;
 }
@@ -137,12 +155,14 @@ img{
 }
 
 .middle-nav div {
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 800;
 }  
 
 .nav-list{
     overflow-y: auto;
+    min-height: 100px;
+    padding-left: 10px;
 }
 
 .nav-list ul {
@@ -151,7 +171,7 @@ img{
 }
 
 .nav-list .nav-items {
-    font-size: .95rem;
+    font-size: .8rem;
     font-weight: 700;
     margin: 15px 0;
 }
@@ -162,6 +182,12 @@ img{
     flex-direction: column;
     justify-content: end;
     margin-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.bottom-nav a{
+    text-decoration: none;
 }
 
 .download *{
@@ -169,12 +195,18 @@ img{
     font-weight: bold;
 }
 
+.download a{
+    font-size: .75rem;
+    color: #878787;
+}
+
 .user *{
     font-size: 1rem;
     margin-top: 15px;
 }
 
-.user span{
+.user a{
+    font-size: .8rem;
     color: white;
 }
 
@@ -213,14 +245,17 @@ img{
     list-style: none;
 }
 
-.main-items:hover{
-    box-shadow:inset 0 -10px 0 -9px #9CE62A;
-}
-
 .main-list a{
     font-weight: 800;
     text-decoration: none;
     color: gray
+}
+
+#border{
+    border-top: 2px solid lawngreen;
+    width: 50%;
+    margin: 0 auto;
+    display: none;
 }
 
 .container{
@@ -312,6 +347,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 2;
     height: 70px;
     background-color: #080B12;
     display: flex;
@@ -498,23 +534,28 @@ footer{
 }
 
 /* HOVER */
-.home span:hover{
+.home a:hover{
     color:white;
-    cursor: pointer;
 }
 
-.top-nav img:hover{
+.home:hover{
     box-shadow:inset 10px 0 0 -8px #9CE62A;
 }
 
-.search span:hover{
+.search a:hover{
     color:white;
-    cursor: pointer;
 }
 
-.library span:hover{
+.search:hover{
+    box-shadow:inset 10px 0 0 -8px #9CE62A;
+}
+
+.library a:hover{
     color:white;
-    cursor: pointer;
+}
+
+.library:hover{
+    box-shadow:inset 10px 0 0 -8px #9CE62A;
 }
 
 .playlist:hover{
@@ -522,13 +563,13 @@ footer{
     cursor: pointer;
 }
 
-.playlist i:hover{
-    color: white;
-}
-
-.download > span:hover{
+.playlist:hover .fa-square-plus{
     color: white;
     cursor: pointer;
+}
+
+.download > a:hover{
+    color: white;
 }
 
 .effect:hover{
@@ -541,6 +582,10 @@ footer{
 
 .main-items:hover a{
     color: white;
+}
+
+.main-items:hover #border{
+    display:block;
 }
 
 .upgrade:hover{
@@ -572,27 +617,23 @@ footer{
 }
 
 
-
-
 /* RESPONSIVE */
-
-/* FOOTER */
-
 /* MEDIUM */
+
 @media screen and (max-width:992px) {
     /* MAIN-CONTENT */
     .row{
         flex-wrap: wrap;
     }
-
+    
     .col{
         width: calc(100% / 4)
     }
-
+    
     .main-list{
         flex-wrap: wrap;
     }
-
+    
     .main-list li:last-child{
         display: flex;
         justify-content: center;
@@ -600,7 +641,7 @@ footer{
         margin-top: 20px;
     }
     
-
+    
     /* FOOOTER */
     .footer-column-left .album{
         font-size: .85rem;
@@ -656,7 +697,6 @@ footer{
         white-space: pre-line;
         font-size: 1rem;
     }
-}
 
 /* X-SMALL */
 
@@ -670,12 +710,37 @@ footer{
         display: block;
     }
 
+    .main-nav-xs .container-nav{
+        align-items: center;
+        padding: 5px;
+    }
+
     #main-content{
-        width: calc(100% - 75px);
+        width: calc(100% - 35px);
+    }
+
+    .home{
+        padding-left: 0;
+    }
+
+    .search{
+        padding-left: 0;
+    }
+
+    .library{
+        padding-left: 0;
+    }
+
+    .bottom-nav{
+        padding-left: 0;
     }
 
     .download{
         margin-bottom: 0;
+    }
+
+    .download img{
+        padding-right: 2px;
     }
 
 

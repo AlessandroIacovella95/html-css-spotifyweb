@@ -11,6 +11,10 @@
     <title>SpotifyWeb</title>
     <!-- LINK FAVICON SPOTIFY -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- INIZIO MAIN -->
@@ -25,17 +29,17 @@
                   <!--ICONA HOME  -->
                   <div class="home">
                       <img src="img/home.svg" alt="">
-                      <span>Home</span>
+                      <a href="#">Home</a>
                   </div>
                   <!-- ICONE RICERCA -->
                   <div class="search">
                        <img src="./img/search.svg" alt="">
-                       <span>Cerca</span>
+                       <a href="#">Cerca</a>
                   </div>
                   <!-- ICONE LIBRERIA -->
                   <div class="library">
                       <img src="./img/libreria.svg" alt="">
-                      <span>La tua Libreria</span>
+                      <a href="#">La tua libreria</a>
                   </div>
                </div>
                <!-- INIZIO PLAYLIST NAVBAR -->
@@ -44,12 +48,13 @@
                   <h5>PLAYLIST</h5>
                   <div class="playlist">
                       <i class="fa-solid fa-square-plus"></i>
-                      <div>Crea Playlist</div>
+                      <span>Crea Playlist</span>
                   </div>
                </div>
                 <!-- PLAYLIST -->
                <div class="nav-list">
                   <ul class="ul-name-playlist">
+                       <li class="nav-items"><a href="#">Primo Nome playlist</a></li>
                        <li class="nav-items"><a href="#">Nome playlist</a></li>
                        <li class="nav-items"><a href="#">Nome playlist</a></li>
                        <li class="nav-items"><a href="#">Nome playlist</a></li>
@@ -64,6 +69,9 @@
                        <li class="nav-items"><a href="#">Nome playlist</a></li>
                        <li class="nav-items"><a href="#">Nome playlist</a></li>
                        <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Nome playlist</a></li>
+                       <li class="nav-items"><a href="#">Ultimo Nome playlist</a></li>
                   </ul>
               </div>
               <!-- INIZIO INFO ACCOUNT -->
@@ -71,13 +79,13 @@
                   <!--ICON INSTALLA APP -->
                   <div class="download">
                       <img src="./img/download.svg" alt="">
-                      <span>Installa App</span>
+                      <a href="#">Installa App</a>
                   </div>
                   <hr>
                   <!-- UTENTE -->
                   <div class="user">
                        <img src="./img/profile.svg" alt="">
-                       <span>John Doe</span>
+                       <a href="#">John Doe</a>
                   </div>
               </div>
             </div>
@@ -118,12 +126,24 @@
                 </header>
                 <!-- LISTA MAIN CONTENT -->
                 <ul class="main-list">
-                    <li class="main-items"><a href="#">IN EVIDENZA</a></li>
-                    <li class="main-items"><a href="#">PODCAST</a></li>
-                    <li class="main-items"><a href="#">CLASSIFICHE</a></li>
-                    <li class="main-items"><a href="#">GENERI E MOOD</a></li>
-                    <li class="main-items"><a href="#">NUOVE USCITE</a></li>
-                    <li class="main-items"><a href="#">SCOPRI</a></li>
+                    <li class="main-items"><a href="#">IN EVIDENZA</a>
+                        <div id="border"></div>
+                    </li>
+                    <li class="main-items"><a href="#">PODCAST</a>
+                        <div id="border"></div>
+                    </li>
+                    <li class="main-items"><a href="#">CLASSIFICHE</a>
+                        <div id="border"></div>
+                    </li>
+                    <li class="main-items"><a href="#">GENERI E MOOD</a>
+                        <div id="border"></div>
+                    </li>
+                    <li class="main-items"><a href="#">NUOVE USCITE</a>
+                        <div id="border"></div>
+                    </li>
+                    <li class="main-items"><a href="#">SCOPRI</a>
+                        <div id="border"></div>
+                    </li>
                 </ul>
                 <div class="container">
                     <!-- TITOLO MAIN CONTENT -->
